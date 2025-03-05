@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -23,8 +25,29 @@
 
   <header>
     <nav>
+      <div class="nav-desktop">
+        <a href="#"><img src="assets/images/logo.svg" alt="Logo sneakers"></a>
+        <ul class="nav-menu">
+          <li class="nav-link">
+            <a href="#" class="text-present-4">Collections</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" class="text-present-4">Men</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" class="text-present-4">Women</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" class="text-present-4">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" class="text-present-4">Contact</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="left">
-        <button class="burger-menu">
+        <button class="burger-menu" id="burger-menu">
           <div class="hamburguer">
             <div class="bar" id="bar1"></div>
             <div class="bar" id="bar2"></div>
@@ -34,6 +57,36 @@
         <a href="#">
           <img src="assets/images/logo.svg" alt="Logo sneakers">
         </a>
+      </div>
+
+      <div class="menu" id="menu">
+        <div class="menu-container">
+          <button class="burger-menu" id="close-menu">
+            <div class="hamburguer">
+              <div class="bar" id="bar1"></div>
+              <div class="bar" id="bar2"></div>
+              <div class="bar" id="bar3"></div>
+            </div>
+          </button>
+          
+          <ul class="nav-menu">
+            <li class="nav-link">
+              <a href="#" class="text-present-3-bold">Collections</a>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="text-present-3-bold">Men</a>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="text-present-3-bold">Women</a>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="text-present-3-bold">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="text-present-3-bold">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
       
       <div class="rigth">
@@ -46,23 +99,76 @@
       </div>
     </nav>
   </header>
+  <!-- <main>
+    <div class="carousel w-full product">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="assets/images/image-product-1.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="assets/images/image-product-2.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="assets/images/image-product-3.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="assets/images/image-product-4.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <h2 class="text-present-6">Sneaker Company</h2>
+      <h1 class="text-present-2">Fall Limited Edition Sneakers</h1>
+      <p class="text-present-4">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="price">
+        <div class="promotion">
+          <div>
+            <span class="text-present-2">$125.00</span>
+            <span class="text-present-3-bold">50%</span>
+          </div>
+          <span class="text-present-3-bold">$250.00</span>
+        </div>
+      </div>
+    </div>
+  </main> -->
 
-  <!-- Collections
-  Men
-  Women
-  About
-  Contact
+  <!-- 
+  
 
-  Sneaker Company
+  
 
-  Fall Limited Edition Sneakers
+  
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+  
 
-  $125.00
-  50%
-  $250.00
+  
+  
+  
 
   <button class="quantity-box" ><span>-</span>0<span>+</span></button>
   Add to cart -->
@@ -71,5 +177,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="assets/js/script.js"></script>
+
 </body>
 </html>
