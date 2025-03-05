@@ -99,3 +99,43 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav .left .burger-menu {
+    width:  16px;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .left .burger-menu .hamburguer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+nav .left .burger-menu .hamburguer .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--grey-500);
+}
+
+nav .rigth {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav .rigth .user img {
+    width: 24px;
+    height: 24px;
+}
