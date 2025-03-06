@@ -251,6 +251,98 @@ nav .rigth .user img {
     }
 }
 
-/* .product {
+main .product {
     max-height: 400px;
-} */
+}
+
+main .description {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main .description h2 {
+    text-transform: uppercase;
+    color: var(--grey-500);
+}
+
+main .description h1 {
+    color: var(--grey-950);
+}
+
+main .description p {
+    color: var(--grey-500);
+}
+
+main .description .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+main .description .price .promotion {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+main .description .price .promotion span:nth-of-type(1) {
+    color: var(--grey-950);
+}
+
+main .description .price .promotion span:nth-of-type(2) {
+    background-color: var(--grey-950);
+    color: var(--white);
+    width: 51px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+main .description .price .discount {
+    color: var(--grey-500);
+    text-decoration: line-through ;
+}
+
+main .button-card {
+    display: grid;
+    gap: 16px;
+}
+
+main .button-card button {
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+main .button-card button:nth-of-type(1) {
+    background-color: var(--grey-50);
+    justify-content: space-between;
+    color: var(--grey-950);
+}
+
+main .button-card button:nth-of-type(1) .control {
+    font-size: 20px;
+    font-weight: var(--font-bold);
+    color: var(--orange-500);
+    cursor: pointer; 
+}
+
+main .button-card button:nth-of-type(2) {
+    background-color: var(--orange-500);
+    justify-content: center;
+    gap: 16px;
+    color: var(--grey-950);
+    cursor: pointer; 
+}
+
+@media screen and (min-width: 768px) {
+    main .button-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
