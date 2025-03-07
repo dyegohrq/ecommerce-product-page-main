@@ -251,8 +251,38 @@ nav .rigth .user img {
     }
 }
 
+@media screen and (min-width: 768px) {
+    main {
+        max-width: var(--max-width-tablet);
+        margin: 48px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: var(--max-width-desktop);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 128px;
+    }
+}
+
 main .product {
     max-height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    main .product {
+        max-height: 290px;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main .product {
+        display: none;
+    }
 }
 
 main .description {
@@ -280,6 +310,14 @@ main .description .price {
     align-items: center;
     justify-content: space-between;
     margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    main .description .price {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 main .description .price .promotion {
